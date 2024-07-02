@@ -50,7 +50,7 @@ function App() {
       alignItems: "center"
     }}
     >
-      <div style={{ fontSize: "2rem", textAlign: "center"}}>
+      <div className="text-2xl text-center">
         {isWinner && "Winner!  - Refresh to try again"}
         {isLoser && "Nice Try - Refresh to try again"}
       </div>
@@ -59,7 +59,7 @@ function App() {
         reveal={isLoser}
         guessedLetters={guessedLetters}
         wordToGuess={wordToGuess}/>
-      <div style={{alignSelf: "stretch"}}>
+      <div className="self-stretch">
         <Keyboard
         activeLetters={guessedLetters.filter(letter =>
           wordToGuess.includes(letter))}
